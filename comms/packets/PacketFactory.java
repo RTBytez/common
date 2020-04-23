@@ -1,14 +1,14 @@
 package com.rtbytez.common.comms.packets;
 
 import com.google.gson.Gson;
-import com.rtbytez.server.util.Console;
+import com.rtbytez.common.util.Console;
 import org.json.JSONObject;
 import org.reflections.Reflections;
 
 import java.util.HashMap;
 import java.util.Set;
 
-import static com.rtbytez.server.util.Functions.disableLoggerFor;
+import static com.rtbytez.common.util.Functions.disableLoggerFor;
 
 public class PacketFactory {
 
