@@ -4,15 +4,15 @@ import com.rtbytez.common.comms.packets.RTPacket;
 
 public class RTPFileRequestDelete extends RTPacket {
 
-    private final String path;
+    private final String filePath;
 
-    public RTPFileRequestDelete(String header, String path) {
+    public RTPFileRequestDelete(String header, String filePath) {
         super(header);
         setShortCode("FileRequestDelete");
-        this.path = path;
+        this.filePath = filePath;
     }
 
-    public String getPath() {
-        return path;
+    public String getFilePath() {
+        return filePath;
     }
 }

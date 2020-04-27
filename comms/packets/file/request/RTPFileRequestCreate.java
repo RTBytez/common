@@ -3,15 +3,15 @@ package com.rtbytez.common.comms.packets.file.request;
 import com.rtbytez.common.comms.packets.RTPacket;
 
 public class RTPFileRequestCreate extends RTPacket {
-    private final String path;
+    private final String filePath;
 
-    public RTPFileRequestCreate(String header, String path) {
+    public RTPFileRequestCreate(String header, String filePath) {
         super(header);
         setShortCode("FileRequestCreate");
-        this.path = path;
+        this.filePath = filePath;
     }
 
-    public String getPath() {
-        return path;
+    public String getFilePath() {
+        return filePath;
     }
 }

@@ -3,18 +3,18 @@ package com.rtbytez.common.comms.packets.file.request;
 import com.rtbytez.common.comms.packets.RTPacket;
 
 public class RTPFileRequestAddLine extends RTPacket {
-    private final String path;
+    private final String filePath;
     private final int lineNumber;
 
-    public RTPFileRequestAddLine(String header, String path, int lineNumber) {
+    public RTPFileRequestAddLine(String header, String filePath, int lineNumber) {
         super(header);
         setShortCode("FileRequestAddLine");
-        this.path = path;
+        this.filePath = filePath;
         this.lineNumber = lineNumber;
     }
 
-    public String getPath() {
-        return path;
+    public String getFilePath() {
+        return filePath;
     }
 
     public int getLineNumber() {
