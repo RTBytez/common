@@ -32,14 +32,14 @@ public class PacketFactory {
 
     }
 
-    public static RTPacket createPacket(String json) {
+    public static RTPacket createPacket(String header, String json) {
         try {
             JSONObject jsonObject = new JSONObject(json);
             Class<? extends RTPacket> clazz = allRTPacketClasses.get(jsonObject.getString("shortCode"));
             return GSON.fromJson(json, clazz);
         } catch (Exception e) {
             Console.log("PacketFactory", "Created an invalid packet for: " + json);
-            RTPacket rtPacket = new RTPacket("error") {
+            RTPacket rtPacket = new RTPacket(header) {
             };
             rtPacket.setValid(false);
             return rtPacket;
