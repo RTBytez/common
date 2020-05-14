@@ -12,7 +12,7 @@ public class RTPFileModifyLine extends RTPacket {
 
     public RTPFileModifyLine(String header, String roomId, String peerId, String filePath, String lineId, String text) {
         super(header);
-        setShortCode("FileAddLine");
+        setShortCode("FileModifyLine");
         this.roomId = roomId;
         this.peerId = peerId;
         this.filePath = filePath;
