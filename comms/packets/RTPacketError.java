@@ -11,4 +11,7 @@ public abstract class RTPacketError extends RTPacket {
         setError(true);
     }
 
+    public String getMessage() {
+        return message;
+    }
 }

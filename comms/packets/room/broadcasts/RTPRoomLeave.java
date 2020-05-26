@@ -10,7 +10,6 @@ public class RTPRoomLeave extends RTPacket {
 
     public RTPRoomLeave(String header, String roomId, String peerId, String peerUsername) {
         super(header);
-        setShortCode("RoomLeave");
         this.roomId = roomId;
         this.peerId = peerId;
         this.peerUsername = peerUsername;

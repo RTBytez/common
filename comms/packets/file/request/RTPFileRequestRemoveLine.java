@@ -1,14 +1,13 @@
 package com.rtbytez.common.comms.packets.file.request;
 
-import com.rtbytez.common.comms.packets.RTPacket;
+import com.rtbytez.common.comms.packets.RTPacketRequest;
 
-public class RTPFileRequestRemoveLine extends RTPacket {
+public class RTPFileRequestRemoveLine extends RTPacketRequest {
     private final String filePath;
     private final String lineId;
 
     public RTPFileRequestRemoveLine(String header, String filePath, String lineId) {
         super(header);
-        setShortCode("FileRequestRemoveLine");
         this.filePath = filePath;
         this.lineId = lineId;
     }

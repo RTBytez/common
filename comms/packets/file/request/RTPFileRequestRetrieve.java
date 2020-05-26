@@ -1,13 +1,12 @@
 package com.rtbytez.common.comms.packets.file.request;
 
-import com.rtbytez.common.comms.packets.RTPacket;
+import com.rtbytez.common.comms.packets.RTPacketRequest;
 
-public class RTPFileRequestRetrieve extends RTPacket {
+public class RTPFileRequestRetrieve extends RTPacketRequest {
     private final String filePath;
 
     public RTPFileRequestRetrieve(String header, String filePath) {
         super(header);
-        setShortCode("FileRequestRetrieve");
         this.filePath = filePath;
     }
 

@@ -10,7 +10,6 @@ public class RTPRoomJoin extends RTPacket {
 
     public RTPRoomJoin(String header, String roomId, String peerId, String peerUsername) {
         super(header);
-        setShortCode("RoomJoin");
         this.roomId = roomId;
         this.peerId = peerId;
         this.peerUsername = peerUsername;

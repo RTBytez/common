@@ -9,7 +9,6 @@ public class RTPInfoSecret extends RTPacket {
     public RTPInfoSecret(String header, String secret) {
         super(header);
         this.secret = secret;
-        setShortCode("InfoSecret");
     }
 
     public String getSecret() {

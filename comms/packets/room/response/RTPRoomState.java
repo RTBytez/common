@@ -6,6 +6,5 @@ public class RTPRoomState extends RTPacket {
     //TODO
     public RTPRoomState(String header) {
         super(header);
-        setShortCode("RoomState");
     }
 }

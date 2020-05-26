@@ -10,7 +10,6 @@ public class RTPFileDelete extends RTPacket {
 
     public RTPFileDelete(String header, String roomId, String peerId, String filePath) {
         super(header);
-        setShortCode("FileDelete");
         this.roomId = roomId;
         this.peerId = peerId;
         this.filePath = filePath;

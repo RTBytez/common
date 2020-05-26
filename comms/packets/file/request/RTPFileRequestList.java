@@ -1,10 +1,9 @@
 package com.rtbytez.common.comms.packets.file.request;
 
-import com.rtbytez.common.comms.packets.RTPacket;
+import com.rtbytez.common.comms.packets.RTPacketRequest;
 
-public class RTPFileRequestList extends RTPacket {
+public class RTPFileRequestList extends RTPacketRequest {
     public RTPFileRequestList(String header) {
         super(header);
-        setShortCode("FileRequestList");
     }
 }

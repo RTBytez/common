@@ -12,7 +12,6 @@ public class RTPFileAddLine extends RTPacket {
 
     public RTPFileAddLine(String header, String roomId, String peerId, String filePath, String lineId, int lineNumber) {
         super(header);
-        setShortCode("FileAddLine");
         this.roomId = roomId;
         this.peerId = peerId;
         this.filePath = filePath;

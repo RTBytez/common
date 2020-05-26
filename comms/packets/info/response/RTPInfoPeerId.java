@@ -7,7 +7,6 @@ public class RTPInfoPeerId extends RTPacket {
 
     public RTPInfoPeerId(String header, String id) {
         super(header);
-        setShortCode("InfoPeerId");
         this.id = id;
     }
 

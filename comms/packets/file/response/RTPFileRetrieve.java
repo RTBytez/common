@@ -9,11 +9,12 @@ public class RTPFileRetrieve extends RTPacket {
 
     private final String roomId;
     private final String filePath;
+    private final String hash;
     private final List<LineBundle> lines;
 
-    public RTPFileRetrieve(String header, String roomId, String filePath, List<LineBundle> lines) {
+    public RTPFileRetrieve(String header, String roomId, String filePath, String hash, List<LineBundle> lines) {
         super(header);
-        setShortCode("FileRetrieve");
+        this.hash = hash;
         this.lines = lines;
         this.roomId = roomId;
         this.filePath = filePath;
@@ -25,6 +26,10 @@ public class RTPFileRetrieve extends RTPacket {
 
     public String getFilePath() {
         return filePath;
+    }
+
+    public String getHash() {
+        return hash;
     }
 
     public List<LineBundle> getLines() {

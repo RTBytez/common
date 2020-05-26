@@ -14,6 +14,7 @@ public abstract class RTPacket {
     public RTPacket(String header) {
         this.header = header;
         setError(false);
+        setShortCode(this.getClass().getSimpleName().substring(3));
     }
 
     /**

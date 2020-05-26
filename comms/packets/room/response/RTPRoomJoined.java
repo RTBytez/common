@@ -7,7 +7,6 @@ public class RTPRoomJoined extends RTPacket {
 
     public RTPRoomJoined(String header, String roomId) {
         super(header);
-        setShortCode("RoomJoined");
         this.roomId = roomId;
     }
 

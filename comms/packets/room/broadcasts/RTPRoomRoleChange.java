@@ -11,7 +11,6 @@ public class RTPRoomRoleChange extends RTPacket {
 
     public RTPRoomRoleChange(String header, String roomId, String peerId, String peerUsername, String role) {
         super(header);
-        setShortCode("RoomRoleChange");
         this.roomId = roomId;
         this.peerId = peerId;
         this.peerUsername = peerUsername;

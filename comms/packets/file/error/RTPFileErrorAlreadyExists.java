@@ -6,6 +6,5 @@ public class RTPFileErrorAlreadyExists extends RTPacketError {
 
     public RTPFileErrorAlreadyExists(String header) {
         super(header, "File already exists");
-        setShortCode("FileErrorAlreadyExists");
     }
 }

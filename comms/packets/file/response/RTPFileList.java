@@ -10,7 +10,6 @@ public class RTPFileList extends RTPacket {
 
     public RTPFileList(String header, List<String> fileList) {
         super(header);
-        setShortCode("FileList");
         this.fileList = fileList;
     }
 

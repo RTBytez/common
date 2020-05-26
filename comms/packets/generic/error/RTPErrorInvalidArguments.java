@@ -6,6 +6,5 @@ public class RTPErrorInvalidArguments extends RTPacketError {
 
     public RTPErrorInvalidArguments(String header) {
         super(header, "Invalid arguments were given in an attempt to perform this action");
-        setShortCode("ErrorInvalidArguments");
     }
 }

@@ -6,6 +6,5 @@ public class RTPFileErrorDoesntExist extends RTPacketError {
 
     public RTPFileErrorDoesntExist(String header) {
         super(header, "The file doesn't exist");
-        setShortCode("FileErrorDoesntExist");
     }
 }

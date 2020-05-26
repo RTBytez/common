@@ -1,10 +1,9 @@
 package com.rtbytez.common.comms.packets.room.request;
 
-import com.rtbytez.common.comms.packets.RTPacket;
+import com.rtbytez.common.comms.packets.RTPacketRequest;
 
-public class RTPRoomRequestCreate extends RTPacket {
+public class RTPRoomRequestCreate extends RTPacketRequest {
     public RTPRoomRequestCreate(String header) {
         super(header);
-        setShortCode("RoomRequestCreate");
     }
 }

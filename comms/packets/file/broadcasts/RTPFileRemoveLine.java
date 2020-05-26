@@ -11,7 +11,6 @@ public class RTPFileRemoveLine extends RTPacket {
 
     public RTPFileRemoveLine(String header, String roomId, String peerId, String filePath, String lineId) {
         super(header);
-        setShortCode("FileAddLine");
         this.roomId = roomId;
         this.peerId = peerId;
         this.filePath = filePath;

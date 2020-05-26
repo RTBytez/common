@@ -11,7 +11,6 @@ public class RTPFileRename extends RTPacket {
 
     public RTPFileRename(String header, String roomId, String peerId, String fileOldPath, String fileNewPath) {
         super(header);
-        setShortCode("FileRename");
         this.roomId = roomId;
         this.peerId = peerId;
         this.fileOldPath = fileOldPath;

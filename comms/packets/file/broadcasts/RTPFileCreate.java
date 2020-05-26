@@ -10,7 +10,6 @@ public class RTPFileCreate extends RTPacket {
 
     public RTPFileCreate(String header, String roomId, String peerId, String filePath) {
         super(header);
-        setShortCode("FileCreate");
         this.roomId = roomId;
         this.peerId = peerId;
         this.filePath = filePath;
