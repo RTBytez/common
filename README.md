@@ -1,2 +1,2 @@
 # common
-Shared code between client and server
+Shared code between the client and server codebase's

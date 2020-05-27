@@ -6,7 +6,7 @@ import java.util.List;
 
 public class RTPFileList extends RTPacket {
 
-    List<String> fileList;
+    final List<String> fileList;
 
     public RTPFileList(String header, List<String> fileList) {
         super(header);
