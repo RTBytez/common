@@ -7,7 +7,6 @@ public abstract class RTPacketError extends RTPacket {
     public RTPacketError(String header, String message) {
         super(header);
         this.message = message;
-        setShortCode("GenericError");
         setError(true);
     }
 
