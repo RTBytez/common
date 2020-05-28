@@ -5,6 +5,6 @@ import com.rtbytez.common.comms.packets.RTPacketError;
 public class RTPFileErrorDoesntExist extends RTPacketError {
 
     public RTPFileErrorDoesntExist(String header) {
-        super(header, "The file doesn't exist");
+        super(header, "The file doesnt exist");
     }
 }
