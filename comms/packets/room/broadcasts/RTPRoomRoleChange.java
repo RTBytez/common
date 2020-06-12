@@ -1,5 +1,6 @@
 package com.rtbytez.common.comms.packets.room.broadcasts;
 
+import com.rtbytez.common.comms.enums.RoomRole;
 import com.rtbytez.common.comms.packets.RTPacket;
 
 public class RTPRoomRoleChange extends RTPacket {
@@ -7,9 +8,9 @@ public class RTPRoomRoleChange extends RTPacket {
     private final String roomId;
     private final String peerId;
     private final String peerUsername;
-    private final String role;
+    private final RoomRole role;
 
-    public RTPRoomRoleChange(String header, String roomId, String peerId, String peerUsername, String role) {
+    public RTPRoomRoleChange(String header, String roomId, String peerId, String peerUsername, RoomRole role) {
         super(header);
         this.roomId = roomId;
         this.peerId = peerId;
@@ -29,7 +30,7 @@ public class RTPRoomRoleChange extends RTPacket {
         return peerUsername;
     }
 
-    public String getRole() {
+    public RoomRole getRole() {
         return role;
     }
 }
